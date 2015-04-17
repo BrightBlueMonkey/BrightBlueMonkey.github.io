@@ -1,6 +1,6 @@
 function load() 
 {
-	findAndLoadImages("samplecards");
+	findAndLoadImages("cards");
 	console.log("Finished loading images");
 }
 
