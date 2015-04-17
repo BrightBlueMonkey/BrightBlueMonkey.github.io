@@ -6,8 +6,10 @@ function load()
 
 function findAndLoadImages(path)
 {
+	console.log("Loading images");
 	var fileextensions = ["png", "jpg"];
 	$.ajax({
+		console.log("Loading images with ajax");
 		//This will retrieve the contents of the folder if the folder is configured as 'browsable'
 		url: path + "/",
 		success: function (data)
@@ -16,6 +18,7 @@ function findAndLoadImages(path)
 			$(data).find("a").each(function ()
 			{
 				var filename = this.href.replace(window.location, "").replace("http:///", "");
+				console.log(filename);
 				if(fileextensions.indexOf(getFileExt(filename)) >= 0)
 				{
 					id = filename.slice(0, filename.lastIndexOf("."));
