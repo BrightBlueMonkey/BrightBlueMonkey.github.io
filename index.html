@@ -3,6 +3,19 @@
 	<head>
 		<title>Bright Blue Monkey Cards</title>
 		<!-- <link rel="stylesheet" type="text/css" href="table.css"></link> -->
+        <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+            apiKey: "AIzaSyAWsFCTQjXHjw-sbJVXN-JiUWhmXmoIMkM",
+            authDomain: "brightbluemonkeycards-88d8e.firebaseapp.com",
+            databaseURL: "https://brightbluemonkeycards-88d8e.firebaseio.com",
+            messagingSenderId: "1017895325761"
+            };
+            firebase.initializeApp(config);
+            var database = firebase.database();
+        </script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="bbm.js"></script>
 	</head>
